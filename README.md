@@ -6,14 +6,16 @@ MyOpenSub is a free desktop app that translates the subtitles a video already ha
 
 ## Download
 
-**[Download the latest release](https://github.com/swanhtet1992/myopensub-releases/releases/latest)**, then choose the one file for your computer. In each file name, `…` is the version number.
+**[Download from the releases page](https://github.com/swanhtet1992/myopensub-releases/releases)**, then choose the one file for your computer. In each file name, `…` is the version number.
+
+Version 0.1.0 is a pre-release: it is still being tested, so expect rough edges, and please [report what goes wrong](#problems).
 
 | Your computer | File |
 |---|---|
 | Windows 10 or 11 (64-bit) | `MyOpenSub-…-windows-x64-setup.exe` |
 | Mac with Apple silicon (M1 or later), macOS 14 or later | `MyOpenSub-…-macos-apple-silicon.dmg` |
-| Linux (64-bit): Debian, Ubuntu and other Debian-based systems | `MyOpenSub-…-linux-x64.deb` |
-| Other Linux (64-bit) | `MyOpenSub-…-linux-x64.AppImage` (needs FFmpeg installed) |
+| Linux (64-bit Intel or AMD): Debian, Ubuntu and other Debian-based systems | `MyOpenSub-…-linux-x64.deb` |
+| Other Linux (64-bit Intel or AMD) | `MyOpenSub-…-linux-x64.AppImage` (needs FFmpeg installed) |
 
 There is no version for Macs with an Intel processor.
 
@@ -26,19 +28,19 @@ Each release also holds `SHA256SUMS.txt`, for checking that a download arrived c
 
 ## First launch
 
-This release does not yet carry the developer signature that Windows and macOS look for, so both warn you the first time you open MyOpenSub. Here is what to do on each system.
+This release does not yet carry the developer signature that Windows and macOS look for, so both warn you the first time you open MyOpenSub. The exact steps for each system are being confirmed with testers during the pre-release, and will be written here.
 
 ### Windows
 
-TO CONFIRM: written after a tester's first launch.
+Being confirmed with testers.
 
 ### macOS
 
-TO CONFIRM: written after a tester's first launch.
+Being confirmed with testers.
 
 ### Linux
 
-TO CONFIRM: written after a tester's first launch.
+Being confirmed with testers.
 
 ## What you need
 
@@ -50,7 +52,7 @@ Your videos never leave your computer.
 
 **When you translate,** the subtitle text, and the Context and the names and terms from the Translate window, go to the service you chose, with your key. OpenRouter passes them on to the company behind the model you picked.
 
-**When you export a translation** (burned into the video, or as a subtitle file), that episode's lines are sent to an open dataset of translations, so future models translate better:
+**When you export a translation** (burned into the video, or as a subtitle file), that episode's lines are sent to an open dataset of translations, so future models translate better. The dataset is kept on a server run by MyOpenSub's developer. It has not been published yet, and the terms it will be published under have not been set. Contribute only text you are free to share; if you are not sure, switch contributing off. Here is what is sent and what is not:
 
 | Sent | Never sent |
 |---|---|
@@ -59,9 +61,11 @@ Your videos never leave your computer.
 | The names and terms, project name and video name | File locations, the Context you wrote, style, logo |
 | The name you entered under "Credit as" in Settings, if any | Anything before an export: drafts stay on your computer |
 
+Also sent: the two languages, the app's version, and a random code your copy of MyOpenSub made up so that it can later replace or delete what it sent. The server keeps only a scrambled form of that code.
+
 **To turn this off,** switch off "Contribute this translation" in the Export window, or "Contribute exported translations" in Settings, under "Open dataset". Both are the same setting, and it is on by default.
 
-**To delete what was sent,** open Settings and, under "Open dataset", next to "Already contributed", click "Delete from Dataset…", then "Delete". This deletes everything sent from this computer and turns contributing off.
+**To delete what was sent,** open Settings and, under "Open dataset", next to "Already contributed", click "Delete from Dataset…", then "Delete". This deletes everything sent from this computer and turns contributing off. It works only from the copy of MyOpenSub that sent them: if its settings are lost, or on another computer, earlier contributions can no longer be deleted this way.
 
 ## Problems
 
