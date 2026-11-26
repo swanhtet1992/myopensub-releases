@@ -10,7 +10,7 @@ MyOpenSub is a free desktop app that translates the subtitles a video already ha
 
 | Your computer | File |
 |---|---|
-| Windows (64-bit) | `MyOpenSub-…-windows-x64-setup.exe` |
+| Windows 10 or 11 (64-bit) | `MyOpenSub-…-windows-x64-setup.exe` |
 | Mac with Apple silicon (M1 or later), macOS 14 or later | `MyOpenSub-…-macos-apple-silicon.dmg` |
 | Linux (64-bit): Debian, Ubuntu and other Debian-based systems | `MyOpenSub-…-linux-x64.deb` |
 | Other Linux (64-bit) | `MyOpenSub-…-linux-x64.AppImage` (needs FFmpeg installed) |
