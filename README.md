@@ -59,13 +59,13 @@ Your videos never leave your computer.
 | The names and terms, project name and video name | File locations, the Context you wrote, style, logo |
 | The name you entered under "Credit as" in Settings, if any | Anything before an export: drafts stay on your computer |
 
-**To turn this off,** switch off "Contribute this translation" in the Export window, or "Contribute exported translations" in Settings, under "Open dataset". Both are the same setting, and it is on until you turn it off.
+**To turn this off,** switch off "Contribute this translation" in the Export window, or "Contribute exported translations" in Settings, under "Open dataset". Both are the same setting, and it is on by default.
 
 **To delete what was sent,** open Settings and, under "Open dataset", next to "Already contributed", click "Delete from Dataset…", then "Delete". This deletes everything sent from this computer and turns contributing off.
 
 ## Problems
 
-[Open an issue](https://github.com/swanhtet1992/myopensub-releases/issues/new/choose) in this repository. Say which version you have (it is at the bottom of Settings) and which system you use. Never paste an API key into an issue.
+[Open an issue](https://github.com/swanhtet1992/myopensub-releases/issues/new/choose) here on GitHub (this needs a GitHub account). Say which version you have (it is at the bottom of Settings) and which system you use. Never paste an API key into an issue.
 
 ## Licences
 
