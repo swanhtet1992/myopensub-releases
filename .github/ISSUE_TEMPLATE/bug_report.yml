@@ -1,0 +1,46 @@
+name: Bug report
+description: Something in MyOpenSub does not work as it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never paste an API key here**, in text or in a screenshot. Anyone can read what you post.
+  - type: input
+    id: version
+    attributes:
+      label: MyOpenSub version
+      description: It is at the bottom of Settings, after "MyOpenSub".
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Operating system and version
+      placeholder: "Windows 11, macOS 15.1, Ubuntu 24.04"
+    validations:
+      required: true
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened
+      description: If there was an error message, copy it word for word.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: false
