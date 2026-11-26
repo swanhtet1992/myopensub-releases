@@ -28,19 +28,37 @@ Each release also holds `SHA256SUMS.txt`, for checking that a download arrived c
 
 ## First launch
 
-This release does not yet carry the developer signature that Windows and macOS look for, so both warn you the first time you open MyOpenSub. The exact steps for each system are being confirmed with testers during the pre-release, and will be written here.
+This release does not yet carry the developer signature that Windows and macOS look for, so both warn you the first time you open MyOpenSub. Here is how to get past the warning on each system. The steps for macOS 15 or later have been tried on a real Mac. The others are what we expect to happen, and are still being confirmed with testers during the pre-release.
 
 ### Windows
 
-Being confirmed with testers.
+1. Your browser may hold the download back, saying the file is not commonly downloaded. Choose to keep it (in Edge: "Keep", then "Keep anyway").
+2. Open the downloaded file. A blue box says "Windows protected your PC". Click "More info", then "Run anyway".
 
 ### macOS
 
-Being confirmed with testers.
+Open the `.dmg` file and drag MyOpenSub onto the Applications folder next to it. Then, on macOS 15 or later:
+
+1. Open MyOpenSub. A message says Apple could not verify it. Click "Done", not "Move to Trash".
+2. Open System Settings, choose "Privacy & Security", and scroll down to the line saying MyOpenSub was blocked. Click "Open Anyway".
+3. macOS asks once more. Choose "Open Anyway" again, and confirm with your password or Touch ID.
+
+On macOS 14: hold Control and click MyOpenSub in Applications, choose "Open", then "Open" again in the message.
+
+You do this only once. After that, MyOpenSub opens like any other app.
 
 ### Linux
 
-Being confirmed with testers.
+The `.deb` needs nothing more: install it as described under [Download](#download).
+
+The AppImage must be allowed to run before it will open. In your file manager, open the file's Properties and allow it to run as a program. Or use a terminal, with the version number in place of `…`:
+
+```sh
+chmod +x MyOpenSub-…-linux-x64.AppImage
+./MyOpenSub-…-linux-x64.AppImage
+```
+
+If it does not start and the message mentions FUSE, add `--appimage-extract-and-run` to the end of the second line.
 
 ## What you need
 
